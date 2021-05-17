@@ -36,9 +36,9 @@ app.post('/signin', (request, response) => { signin.handleSignin(request, respon
 
 app.post('/register', (request, response) => { register.handleRegister(request, response, db, bcrypt) })
 
-app.get('/profile/:id', (request, response) => { profile.handleProfileGet(request, response, db)})
+app.get('/profile/:id', (request, response) => { profile.handleProfileGet(request, response, db) })
 
-app.put('/image', (request, response) => { image.handleImage(request, response, db)})
+app.put('/image', (request, response) => { image.handleImage(request, response, db) })
 
 app.listen(3000, () => {
   console.log('app is running on port 3000');
